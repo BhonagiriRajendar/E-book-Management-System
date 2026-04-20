@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — EBookShelf</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <!-- Left panel -->
+    <div class="auth-left">
+      <div class="auth-hero-icon">📖</div>
+      <h1>Join EBookShelf Today</h1>
+      <p>Create a free account and get instant access to our entire digital library.</p>
+
+      <div class="auth-features">
+        <div class="auth-feature">
+          <div class="auth-feature-dot"></div>
+          <span>100% free to register</span>
+        </div>
+        <div class="auth-feature">
+          <div class="auth-feature-dot"></div>
+          <span>Download books in PDF format</span>
+        </div>
+        <div class="auth-feature">
+          <div class="auth-feature-dot"></div>
+          <span>Browse all categories and genres</span>
+        </div>
+        <div class="auth-feature">
+          <div class="auth-feature-dot"></div>
+          <span>Your account is secured with encryption</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right form -->
+    <div class="auth-right">
+      <div class="auth-card">
+        <h2>Create Account</h2>
+        <p class="subtitle">Fill in your details below to get started</p>
+
+        <div id="alert-box"></div>
+
+        <form id="register-form" novalidate>
+          <div class="form-group">
+            <label for="username">Full Name</label>
+            <div class="input-icon-group">
+              <span class="input-icon">👤</span>
+              <input type="text" id="username" class="form-control"
+                     placeholder="John Doe" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-icon-group">
+              <span class="input-icon">✉️</span>
+              <input type="email" id="email" class="form-control"
+                     placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-icon-group">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="password" class="form-control"
+                     placeholder="At least 6 characters" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="input-icon-group">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="confirm-password" class="form-control"
+                     placeholder="Repeat your password" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="register-btn">
+            Create Account
+          </button>
+        </form>
+
+        <p style="text-align:center; margin-top:1.5rem; font-size:0.88rem; color:var(--gray-600);">
+          Already have an account?
+          <a href="login.html" style="font-weight:600;">Sign in →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

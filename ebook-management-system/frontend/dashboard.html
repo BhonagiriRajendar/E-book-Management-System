@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — EBookShelf</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="brand-icon">📚</div>
+      EBookShelf
+    </div>
+    <ul class="navbar-nav">
+      <li><a href="dashboard.html" class="active">Library</a></li>
+    </ul>
+    <div class="navbar-user">
+      <span id="username-display">Hello, User</span>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div class="page-container">
+    <!-- Page header -->
+    <div class="page-header">
+      <div>
+        <h1>📖 Book Library</h1>
+        <p>Browse and download books from our digital collection</p>
+      </div>
+      <div id="books-count" style="color:var(--gray-600); font-size:0.9rem; align-self:center;"></div>
+    </div>
+
+    <!-- Search section -->
+    <div class="search-section">
+      <div class="search-input-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input"
+               placeholder="Search by title, author, or category…" />
+      </div>
+      <button class="btn btn-primary" id="search-btn">Search</button>
+      <button class="btn btn-outline" id="clear-btn">All Books</button>
+    </div>
+
+    <!-- Alert box for messages -->
+    <div id="alert-box"></div>
+
+    <!-- Books grid / spinner -->
+    <div id="books-container">
+      <div class="spinner-wrapper">
+        <div class="spinner"></div>
+        <span>Loading books…</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
